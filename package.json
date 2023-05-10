@@ -1,0 +1,19 @@
+{
+  "name": "three-js-exp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "gsap": "npm:@gsap/shockingly@^3.11.5",
+    "sass": "^1.62.1",
+    "three": "^0.152.2"
+  }
+}
