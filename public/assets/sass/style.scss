@@ -5,17 +5,31 @@
     box-sizing: border-box;
 }
 
-#container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+    background: fixed;
+    background-image: url("../img/noise.gif");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.95;
 }
 
 .hero {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -23,11 +37,52 @@
     position: relative;
 }
 
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    .wrapper {
+        height: 500px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:first-child {
+        margin-top: 20rem;
+        }
+        &:last-child {
+            margin-top: 30rem;
+            }
+    } 
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    overflow: hidden;
+}
+
 #container__three {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 2;
+    background-color: transparent;
 }
 
 .container {
@@ -47,3 +102,8 @@ h1 {
     color: white;
     user-select: none;
 }
+
+// canvas {
+//     width: 100%;
+//     object-fit: cover;
+// }

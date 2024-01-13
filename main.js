@@ -1,4 +1,3 @@
-// import "./public/assets/sass/style.scss";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import gsap from "gsap";
@@ -17,7 +16,7 @@ let camera = new THREE.PerspectiveCamera(
 );
 
 let renderer = new THREE.WebGLRenderer();
-renderer.setClearColor("#111111");
+renderer.setClearColor(0x000000, 0);
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 document.getElementById("container__three").appendChild(renderer.domElement);

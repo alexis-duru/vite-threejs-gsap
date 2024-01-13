@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>My first three.js app</title>
-    <link rel="stylesheet" href="./public/assets/sass/style.scss" />
+    <link rel="stylesheet" href="./assets/sass/style.scss" />
   </head>
   <body>
+    <div class="container__one">
+      <div class="wrapper">
+        <img class="img1" src="/assets/img/img2.webp" />
+      </div>
+      <div class="wrapper">
+        <img class="img2" src="/assets/img/img3.webp" />
+      </div>
+    </div>
+    {#
+    <div class="overlay"></div>
     <div class="hero"></div>
+    #}
     <div id="container__three">
       <div class="container">
         <h1 class="split">SOME TEXT</h1>
@@ -14,6 +25,6 @@
     </div>
     <div class="hero"></div>
     <script type="module" src="main.js"></script>
-    <script src="./public/SplitText.js"></script>
+    <script type="module" src="smoothscroll.js"></script>
   </body>
 </html>
